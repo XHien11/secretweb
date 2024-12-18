@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <script>
+        const kiemtra = () => {
+            var sName = document.getElementById("txtName").value
+            var sPass = document.getElementById("txtPass").value
+            if ((sName != "aptech") || (sPass != "123")) {
+                alert("Username or Password are incorrect")
+                document.getElementById("txtName").focus
+            }
+            else {
+                alert("Welcom Aptech, login successfully")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">Logo</div>
+            <div id="search">Search: <input type="text"></div>
+        </div>
+        <div class="myNav">
+            <ul>
+                <li><a href="./Hien.html">Anh</a></li>
+                <li><a href="#!">Utilities</a></li>
+                <li><a href="#!">Share</a></li>
+                <li><a href="#!">Knowledge</a></li>
+                <li><a href="./HienPX.html">AnhTH</a></li>
+                <li><a href="#!">About us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <img src="./images/Assignment.jpg">
+    </div>
+    <div class="right">
+        <h1>SignIn Form</h1>
+        <hr align="left" width="50%">
+        <div id="txtName">Login name: <input type="text"></div>
+        <div id="txtPass">Password: <input type="text"></div>
+        <div>Already have an account? SignUp</div>
+        <input type="button" value="SignIn" onclick="kiemtra()">
+    </div>
+
+
+    <footer>
+        <address>&copy; By Me. All right revered</address>
+    </footer>
+</body>
+
+</html>
